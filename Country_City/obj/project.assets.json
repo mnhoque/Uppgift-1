@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nazmu\\source\\repos\\Country_City\\Country_City\\Country_City.csproj",
+      "projectUniqueName": "C:\\Users\\nazmu\\GitHub\\Country_City\\Country_City\\Country_City.csproj",
       "projectName": "Country_City",
-      "projectPath": "C:\\Users\\nazmu\\source\\repos\\Country_City\\Country_City\\Country_City.csproj",
+      "projectPath": "C:\\Users\\nazmu\\GitHub\\Country_City\\Country_City\\Country_City.csproj",
       "packagesPath": "C:\\Users\\nazmu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nazmu\\source\\repos\\Country_City\\Country_City\\obj\\",
+      "outputPath": "C:\\Users\\nazmu\\GitHub\\Country_City\\Country_City\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
