@@ -142,14 +142,32 @@ namespace Country_City
             }
             else
             {
-                Console.WriteLine("Wrong temparature");
+                
                 while (temparatureInCelcius < 73 || temparatureInCelcius > 77)
                 {
+                    Console.WriteLine("Wrong temparature");
                     Console.WriteLine("Enter a temparature in farenhite again");
-                    temparatureInFarenhite = int.Parse(Console.ReadLine());
+                    try
+                    {
+                        temparatureInFarenhite = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Temparatu in farenhite " + temparatureInFarenhite);
+                        checkRight = true;
+                        if (checkRight == true)
+                        {
+                            temparatureInCelcius = (temparatureInFarenhite - 32) * (5 / 9.00);
+                            Console.WriteLine("Now the temparature is in celcius " + String.Format("{0:0.00}", temparatureInCelcius));
+                            
+                        }
+                        
+                    }
+                    catch
+                    {
+                        Console.WriteLine("skriv fel , bara intiger allowed");
+                    }
+                    //while (checkRight == false) ;
+                    //temparatureInFarenhite = int.Parse(Console.ReadLine());
 
-                    temparatureInCelcius = (temparatureInFarenhite - 32) * (5 / 9.00);
-                    Console.WriteLine("Now the temparature is in celcius " + String.Format("{0:0.00}", temparatureInCelcius));
+                    
 
                     if (temparatureInCelcius > 73 && temparatureInCelcius < 77)
                     {
