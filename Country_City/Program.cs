@@ -243,11 +243,6 @@ namespace Country_City
 
             //Uppgift 3:Mål C
 
-            Console.WriteLine("Enter a number between 1 and 25 ");
-            
-
-            bool match = false;
-
             int[] numberArray = new int[10];
 
             for(int i = 0; i < numberArray.Length;i++)
