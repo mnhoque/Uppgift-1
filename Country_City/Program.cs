@@ -87,7 +87,7 @@ namespace Country_City
             Console.WriteLine("Temparatu in farenhite " + temparatureInFarenhite);
 
             temparatureInCelcius = (temparatureInFarenhite - 32) * (5 / 9.00);
-            Console.WriteLine("Now the temparature is "+temparatureInCelcius);
+            Console.WriteLine("Now the temparature is in celcius "+temparatureInCelcius);
             
             if(temparatureInCelcius>73 && temparatureInCelcius < 77)
             {
@@ -101,7 +101,7 @@ namespace Country_City
                     temparatureInFarenhite = int.Parse(Console.ReadLine());
 
                     temparatureInCelcius = (temparatureInFarenhite - 32) * (5 / 9.00);
-                    Console.WriteLine("Now the temparature is in celcius " + temparatureInCelcius);
+                    Console.WriteLine("Now the temparature is in celcius " + String.Format("{0:0.00}", temparatureInCelcius));
 
                     if (temparatureInCelcius > 73 && temparatureInCelcius < 77)
                     {
@@ -115,7 +115,7 @@ namespace Country_City
 
             //uppgift 2 del 4:
 
-            double temparatureInCelcius = 0;
+            /*double temparatureInCelcius = 0;
             int temparatureInFarenhite = 0;
             bool checkRight = false;
             do
@@ -167,15 +167,108 @@ namespace Country_City
                     //while (checkRight == false) ;
                     //temparatureInFarenhite = int.Parse(Console.ReadLine());
 
-                    
-
                     if (temparatureInCelcius > 73 && temparatureInCelcius < 77)
                     {
                         Console.WriteLine("Der ar nu rätt temparature in celcius");
                     }
 
                 }
+            }*/
+            //Uppgift 3:2
+            /*int anyNumber = 40;
+            int[] numberArray = new int[10];
+
+            numberArray[0] = 5;
+            numberArray[1] = 10;
+            numberArray[2] = 15;
+            numberArray[3] = 20;
+            numberArray[4] = 25;
+            numberArray[5] = 30;
+            numberArray[6] = 35;
+            numberArray[7] = 40;
+            numberArray[8] = 45;
+            numberArray[9] = 50;
+
+            foreach (int i in numberArray)
+            {
+                Console.WriteLine(i);
             }
+
+            for(int i = 0; i < numberArray.Length; i++)
+            {
+                if (numberArray[i] == anyNumber)
+                {
+                    Console.WriteLine("matched");
+                }
+            }*/
+
+            //Uppgift 3:3;
+            /*Random rand = new Random();
+            int randomNumber = rand.Next(1, 10);
+
+            bool match = false;
+
+            int[] numberArray = new int[10];
+
+            numberArray[0] = 5;
+            numberArray[1] = 10;
+            numberArray[2] = 15;
+            numberArray[3] = 20;
+            numberArray[4] = 25;
+            numberArray[5] = 30;
+            numberArray[6] = 35;
+            numberArray[7] = 40;
+            numberArray[8] = 45;
+            numberArray[9] = 50;
+
+
+            for (int i = 0; i <= numberArray.Length - 1; i++)
+            {
+                if (numberArray[i] == randomNumber)
+                {
+                    match=true;
+                }
+                
+
+            }
+
+            if (match == true)
+            {
+                Console.WriteLine("You won");
+            }
+            else
+            {
+                Console.WriteLine("You dib not won");
+            }*/
+
+            //Uppgift 3:Mål C
+
+            Console.WriteLine("Enter a number between 1 and 25 ");
+            
+
+            bool match = false;
+
+            int[] numberArray = new int[10];
+
+            for(int i = 0; i < numberArray.Length;i++)
+            {
+                Console.WriteLine("Enter a number between 1 and 25 ");
+                int numberEntered = int.Parse(Console.ReadLine());
+                if (numberEntered < 1 || numberEntered > 25)
+                {
+                    i = i - 1;
+                }
+                else
+                {
+                    numberArray[i] = numberEntered;
+                }
+            }
+
+            foreach(int i in numberArray)
+            {
+                Console.WriteLine(i);
+            }
+
             Console.ReadKey();
         }
     }
